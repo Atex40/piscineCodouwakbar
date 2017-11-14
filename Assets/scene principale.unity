@@ -775,9 +775,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31b00422a53be8d4fa75da312af6b234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxSpeed: 50
-  ForwardAcceleration: 15
-  StraffMaxSpeed: 100
+  MaxSpeed: 100
+  ForwardAcceleration: 20
+  StraffMaxSpeed: 20
   StraffTime: 0.1
 --- !u!54 &2094239729
 Rigidbody:

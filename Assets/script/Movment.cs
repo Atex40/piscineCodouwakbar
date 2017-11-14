@@ -50,6 +50,6 @@ public class Movment : MonoBehaviour {
 
 	private void LateUpdate () 
 	{
-		Debug.Log(_rigidbody.velocity.x);
+		Debug.Log(_rigidbody.velocity.z);
 	}
 }
