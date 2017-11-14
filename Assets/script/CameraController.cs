@@ -10,9 +10,29 @@ public class CameraController : MonoBehaviour {
 
     public int ActualCamera = 0;
 
-	
-	// Update is called once per frame
-	void Update () {
+    private void Start()
+    {
+        if (ActualCamera== 0)
+        {
+            CameraFPS.SetActive(true);
+            CameraTPS.SetActive(false);
+            CameraTOP.SetActive(false);
+        }
+        if (ActualCamera == 1)
+        {
+            CameraFPS.SetActive(false);
+            CameraTPS.SetActive(true);
+            CameraTOP.SetActive(false);
+        }
+        if (ActualCamera == 2)
+        {
+            CameraFPS.SetActive(false);
+            CameraTPS.SetActive(false);
+            CameraTOP.SetActive(true);
+        }
+    }
+    // Update is called once per frame
+    void Update () {
         CameraChanger();
 	}
 
