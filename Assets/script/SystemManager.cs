@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SystemManager : MonoBehaviour {
 
+    public GameObject _torpille;
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -13,4 +16,13 @@ public class SystemManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    void Tirer ()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+
+        }
+    }
+   
 }
