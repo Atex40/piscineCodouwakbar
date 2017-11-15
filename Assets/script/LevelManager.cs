@@ -17,12 +17,12 @@ public class LevelManager : MonoBehaviour {
 	}
 
     private void Start ()
-{
-    _startedTime = DateTime.UtcNow;
-}
+    {
+        _startedTime = DateTime.UtcNow;
+    }
 	
-	// Update is called once per frame
-	void Update () {
-		
+	void PlayerDeath ()
+    {
+        PlayerDeath.Camera.transform	
 	}
 }
