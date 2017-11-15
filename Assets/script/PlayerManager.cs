@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-public class Movment : MonoBehaviour {
+public class PlayerManager : MonoBehaviour {
 
 	private Rigidbody _rigidbody;
 
