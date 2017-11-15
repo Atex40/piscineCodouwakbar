@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class Movment : MonoBehaviour {
 
@@ -16,7 +17,7 @@ public class Movment : MonoBehaviour {
 	public void Awake () 
 	{
 		_rigidbody = GetComponent<Rigidbody>();
-		//Assert.IsNotNull(_rigidbody);
+		Assert.IsNotNull(_rigidbody);
 	}
 
 	void Start () 
