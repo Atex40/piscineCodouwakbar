@@ -593,7 +593,7 @@ MonoBehaviour:
   CameraFPS: {fileID: 1156965812991796}
   CameraTPS: {fileID: 1622413339532814}
   CameraTOP: {fileID: 1645244856446154}
-  ActualCamera: 2
+  ActualCamera: 0
 --- !u!114 &114944775794985670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxSpeed: 100
   ForwardAcceleration: 20
-  StraffMaxSpeed: 20
+  StraffMaxSpeed: 25
   StraffTime: 0.1
 --- !u!124 &124084202532101042
 Behaviour:
