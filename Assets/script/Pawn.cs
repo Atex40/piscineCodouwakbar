@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-public class PlayerManager : MonoBehaviour {
+public class Pawn : MonoBehaviour {
 
 	private Rigidbody _rigidbody;
 

@@ -24,9 +24,9 @@ public class LevelManager : MonoBehaviour {
         _startedTime = DateTime.UtcNow;
     }
 	
-	void PlayerDeath ()
+	public void PlayerDeath ()
     {
-        Player.Camera.transform.parent = null;
+        CameraController.Instance.currentcamera.transform.parent = null;
         Destroy(Player.gameObject);
 	}
 }

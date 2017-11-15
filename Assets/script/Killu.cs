@@ -9,7 +9,7 @@ public class Killu : MonoBehaviour {
         Pawn player = collision.gameObject.GetComponentInParent<Pawn>();
         if(player)
         {
-            player.kill();
+            player.Kill();
         }
     }
 }
