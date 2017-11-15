@@ -20,7 +20,7 @@ public class Underwater : MonoBehaviour
     void Start()
     {
         //Set the background color
-        camera.backgroundColor = new Color(0, 0.4f, 0.7f, 1);
+  //      camera.backgroundColor = new Color(0, 0.4f, 0.7f, 1);
     }
 
     void Update()
