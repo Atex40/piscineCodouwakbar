@@ -6,7 +6,7 @@ public class Killu : MonoBehaviour {
 
     public void OnCollisionEnter (Collision collision)
     {
-        Player player = collision.gameObject.GetComponentInParent<Player>();
+        Pawn player = collision.gameObject.GetComponentInParent<Pawn>();
         if(player)
         {
             player.kill();

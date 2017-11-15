@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.Assertions;
 
 public class LevelManager : MonoBehaviour {
 
@@ -10,10 +11,12 @@ public class LevelManager : MonoBehaviour {
     public TimeSpan RunningTime { get { return DateTime.UtcNow - _startedTime; } }
 
     public DateTime _startedTime;
+    public Pawn Player;
     
 	void Awake ()
     {
-	    Instance = this;	
+        Instance = this;
+        Assert.IsNitNull(Player);
 	}
 
     private void Start ()
@@ -23,6 +26,7 @@ public class LevelManager : MonoBehaviour {
 	
 	void PlayerDeath ()
     {
-        PlayerDeath.Camera.transform	
+        Player.Camera.transform.parent = null;
+        Destroy(Player.gameObject);
 	}
 }

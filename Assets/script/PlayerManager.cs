@@ -14,6 +14,8 @@ public class PlayerManager : MonoBehaviour {
     public float StraffMaxSpeed = 100f;
     public float StraffTime = 0.1f;
 
+    public float _currentHealth = 3;
+
 	public void Awake () 
 	{
 		_rigidbody = GetComponent<Rigidbody>();
@@ -53,4 +55,11 @@ public class PlayerManager : MonoBehaviour {
 	{
 		Debug.Log(_rigidbody.velocity.z);
 	}
+
+    public void Kill()
+    {
+        _currentHealth = 0;
+        LevelManager.Instance.PlayerDeath();
+        
+    }
 }
