@@ -6,6 +6,7 @@ using UnityEngine.Assertions;
 public class Pawn : MonoBehaviour, ITakeDamage {
 
 	private Rigidbody _rigidbody;
+    public Projectile ProjectilePrefab;
 
 	public float MaxSpeed = 100f;
     public float ForwardAcceleration = 25f;
@@ -26,8 +27,27 @@ public class Pawn : MonoBehaviour, ITakeDamage {
 	{
 
 	}
-	
-	private float smoothXVelocity;
+
+    private void Update ()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            SpawnProjectile();
+        }
+    }
+    
+    private void SpawnProjectile()
+    {
+        Projectile projectile = (Projectile)Instantiate(ProjectilePrefab, transform.position, Quaternion.identity);
+        Vector3 initialVelocity = _rigidbody.velocity;
+        initialVelocity.x = 0f;
+        initialVelocity.y = 0f;
+        projectile.Fire(_rigidbody.velocity);
+    }
+
+
+    private float smoothZVelocity = 0f;
+    private float smoothXVelocity = 0f;
 	void FixedUpdate () 
 	{
 		Mouvement();
