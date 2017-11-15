@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-public class Pawn : MonoBehaviour {
+public class Pawn : MonoBehaviour, ITakeDamage {
 
 	private Rigidbody _rigidbody;
 
@@ -61,5 +61,12 @@ public class Pawn : MonoBehaviour {
         _currentHealth = 0;
         LevelManager.Instance.PlayerDeath();
         
+    }
+
+    public void TakeDamage(float damage, GameObject instigator)
+    {
+        _currentHealth -= damage;
+        if (_currentHealth <= 0)
+            Kill();
     }
 }
