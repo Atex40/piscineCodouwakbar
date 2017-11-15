@@ -7,6 +7,8 @@ public class Pawn : MonoBehaviour, ITakeDamage {
 
 	private Rigidbody _rigidbody;
     public Projectile ProjectilePrefab;
+    public Transform SpawnTir;
+
 
 	public float MaxSpeed = 100f;
     public float ForwardAcceleration = 25f;
@@ -38,7 +40,7 @@ public class Pawn : MonoBehaviour, ITakeDamage {
     
     private void SpawnProjectile()
     {
-        Projectile projectile = (Projectile)Instantiate(ProjectilePrefab, transform.position, Quaternion.identity);
+        Projectile projectile = (Projectile)Instantiate(ProjectilePrefab, SpawnTir.position, Quaternion.identity);
         Vector3 initialVelocity = _rigidbody.velocity;
         initialVelocity.x = 0f;
         initialVelocity.y = 0f;
