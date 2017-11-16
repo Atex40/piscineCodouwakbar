@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Killu : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class Killu : MonoBehaviour {
         if(player)
         {
             player.Kill();
+            SceneManager.LoadScene("Scene kevin");
         }
     }
 }
