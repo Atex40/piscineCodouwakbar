@@ -19,6 +19,8 @@ public class Pawn : MonoBehaviour, ITakeDamage {
 
     public float _currentHealth = 3;
 
+    public int Ammo = 3;
+
 	public void Awake () 
 	{
 		_rigidbody = GetComponent<Rigidbody>();
@@ -32,7 +34,7 @@ public class Pawn : MonoBehaviour, ITakeDamage {
 
     private void Update ()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && Ammo > 0)
         {
             SpawnProjectile();
         }
@@ -45,6 +47,7 @@ public class Pawn : MonoBehaviour, ITakeDamage {
         initialVelocity.x = 0f;
         initialVelocity.y = 0f;
         projectile.Fire(_rigidbody.velocity);
+        Ammo--; 
     }
 
 

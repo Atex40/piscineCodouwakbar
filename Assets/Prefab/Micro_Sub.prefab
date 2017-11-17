@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 92062879750239312}
   - component: {fileID: 124404848373801166}
   - component: {fileID: 81614515033979002}
+  - component: {fileID: 114115897597191668}
   m_Layer: 8
   m_Name: Camera_FPS
   m_TagString: MainCamera
@@ -125,6 +126,7 @@ GameObject:
   - component: {fileID: 92750661780092142}
   - component: {fileID: 124084202532101042}
   - component: {fileID: 81586438553651890}
+  - component: {fileID: 114187866241922764}
   m_Layer: 8
   m_Name: Camera_TPS
   m_TagString: MainCamera
@@ -132,6 +134,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1642104642938362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4066934894115218}
+  m_Layer: 0
+  m_Name: SpawnTir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1645244856446154
 GameObject:
   m_ObjectHideFlags: 1
@@ -144,6 +161,7 @@ GameObject:
   - component: {fileID: 92580184811169136}
   - component: {fileID: 124688476793699312}
   - component: {fileID: 81539199419314914}
+  - component: {fileID: 114582023825977818}
   m_Layer: 8
   m_Name: Camera_TOP
   m_TagString: MainCamera
@@ -160,7 +178,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4390392950018440}
   - component: {fileID: 114266424149896570}
-  - component: {fileID: 114384463942716214}
   m_Layer: 8
   m_Name: CameraManager
   m_TagString: Untagged
@@ -194,6 +211,19 @@ Transform:
   m_Father: {fileID: 4123116698270296}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4066934894115218
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1642104642938362}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.417, z: 1.471}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4123116698270296}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4123116698270296
 Transform:
   m_ObjectHideFlags: 1
@@ -201,7 +231,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1387334887164650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.4, y: 1.288, z: -113.5}
+  m_LocalPosition: {x: 12.4, y: 3.9, z: -113.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4390392950018440}
@@ -209,6 +239,7 @@ Transform:
   - {fileID: 4717044906789014}
   - {fileID: 4934243561844060}
   - {fileID: 4065928032974578}
+  - {fileID: 4066934894115218}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -524,7 +555,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!65 &65673700510481042
 BoxCollider:
@@ -580,6 +611,30 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1622413339532814}
   m_Enabled: 1
+--- !u!114 &114115897597191668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156965812991796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: a25e8f80ebf36794e8fd2ba3df7efa0f, type: 2}
+--- !u!114 &114187866241922764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1622413339532814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: a25e8f80ebf36794e8fd2ba3df7efa0f, type: 2}
 --- !u!114 &114266424149896570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -595,19 +650,19 @@ MonoBehaviour:
   CameraTPS: {fileID: 1622413339532814}
   CameraTOP: {fileID: 1645244856446154}
   currentcamera: {fileID: 0}
-  ActualCamera: 0
---- !u!114 &114384463942716214
+  ActualCamera: 1
+--- !u!114 &114582023825977818
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1675556407733142}
+  m_GameObject: {fileID: 1645244856446154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b38438b37ad874c4f8789da9bbc058d7, type: 3}
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  underwaterLevel: 7
+  profile: {fileID: 11400000, guid: a25e8f80ebf36794e8fd2ba3df7efa0f, type: 2}
 --- !u!114 &114944775794985670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -619,11 +674,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31b00422a53be8d4fa75da312af6b234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ProjectilePrefab: {fileID: 114624783501962024, guid: 63b9a0b985a8fb44e8b1aed4b5ecf29c,
+    type: 2}
+  SpawnTir: {fileID: 4066934894115218}
   MaxSpeed: 100
   ForwardAcceleration: 20
-  StraffMaxSpeed: 25
+  StraffMaxSpeed: 50
   StraffTime: 0.1
   _currentHealth: 3
+  Ammo: 3
 --- !u!124 &124084202532101042
 Behaviour:
   m_ObjectHideFlags: 1

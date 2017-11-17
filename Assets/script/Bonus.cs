@@ -11,13 +11,13 @@ public abstract class Bonus : MonoBehaviour {
         Pawn pawn = other.gameObject.GetComponentInParent<Pawn>();
         if (pawn != null)
         {
-            ApplyBonus();
+            ApplyBonus(pawn);
         }
 		
 	}
 	
 	// Update is called once per frame
-	public void virtual ApplyBonus ()
+	public virtual void ApplyBonus (Pawn pawn)
     {
 		
 	}
