@@ -7466,7 +7466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 515bc27242c696c49864ad0935472c9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  Player: {fileID: 1549516181}
   ScoreText: {fileID: 287401614}
   AmmoText: {fileID: 1951613665}
   HealtBar: {fileID: 62550772}
