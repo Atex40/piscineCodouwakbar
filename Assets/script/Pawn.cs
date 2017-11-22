@@ -17,20 +17,24 @@ public class Pawn : MonoBehaviour, ITakeDamage {
     public float StraffMaxSpeed = 100f;
     public float StraffTime = 0.1f;
 
-    public float _currentHealth = 3;
+    public float MaxHealth = 100f;
+    public float CurrentHealth;
 
     public int Ammo = 3;
+    public int Score { get; private set; }
 
-	public void Awake () 
+public void Awake () 
 	{
-		_rigidbody = GetComponent<Rigidbody>();
+        _rigidbody = GetComponent<Rigidbody>();
 		Assert.IsNotNull(_rigidbody);
 	}
 
 	void Start () 
 	{
+        CurrentHealth = MaxHealth;
+        Score = 0;
 
-	}
+    }
 
     private void Update ()
     {
@@ -83,15 +87,20 @@ public class Pawn : MonoBehaviour, ITakeDamage {
 
     public void Kill()
     {
-        _currentHealth = 0;
+        CurrentHealth = 0;
         LevelManager.Instance.PlayerDeath();
         
     }
 
     public void TakeDamage(float damage, GameObject instigator)
     {
-        _currentHealth -= damage;
-        if (_currentHealth <= 0)
+        CurrentHealth -= damage;
+        if (CurrentHealth <= 0)
             Kill();
+    }
+
+    public void AddScore(int scoreValue)
+    {
+        Score += scoreValue;
     }
 }

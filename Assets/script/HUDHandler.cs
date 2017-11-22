@@ -32,6 +32,22 @@ public class HUDHandler : MonoBehaviour
 	    if(Player != null)
         {
             AmmoText.text = "x " + Player.Ammo;
+            HealtBar.fillAmount = Mathf.Max(0, Player.CurrentHealth / Player.MaxHealth);
+            if (HealtBar.fillAmount >= 0.8f)
+            {
+                HealtBar.color = new Color(0,255,0);
+            }
+            else if(HealtBar.fillAmount >= 0.4f)
+            {
+                HealtBar.color = new Color(255,100,0);
+            }
+            else
+            {
+                HealtBar.color = new Color(255,0,0);
+            }
+
+            ScoreText.text = Player.Score.ToString();
+
         }	
 	}
 }

@@ -681,7 +681,8 @@ MonoBehaviour:
   ForwardAcceleration: 20
   StraffMaxSpeed: 50
   StraffTime: 0.1
-  _currentHealth: 3
+  MaxHealth: 100
+  CurrentHealth: 3
   Ammo: 3
 --- !u!124 &124084202532101042
 Behaviour:
