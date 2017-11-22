@@ -4,13 +4,17 @@ using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(AudioSource))]
+
 public abstract class Bonus : MonoBehaviour {
 
     protected Animator _animator;
+    protected AudioSource _audioSource;
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter (Collider other)
@@ -18,6 +22,8 @@ public abstract class Bonus : MonoBehaviour {
         Pawn pawn = other.gameObject.GetComponentInParent<Pawn>();
         if (pawn != null)
         {
+            _audioSource.pitch = Random.Range(0.8f, 1.25f);
+            _audioSource.Play();
             ApplyBonus(pawn);
         }
 		
