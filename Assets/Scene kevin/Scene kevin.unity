@@ -14575,7 +14575,6 @@ GameObject:
   - component: {fileID: 901927635}
   - component: {fileID: 901927634}
   - component: {fileID: 901927633}
-  - component: {fileID: 901927632}
   - component: {fileID: 901927636}
   - component: {fileID: 901927637}
   m_Layer: 0
@@ -14592,29 +14591,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 901927630}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -434.67084, y: 51.446644, z: 158.91455}
+  m_LocalPosition: {x: -394.6, y: 51.446644, z: 363.8}
   m_LocalScale: {x: 16.03852, y: 7.9825797, z: 11.033406}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &901927632
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 901927630}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b699f5231c391c342b52aca88d7fa434, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!23 &901927633
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28347,7 +28329,6 @@ GameObject:
   - component: {fileID: 1314297621}
   - component: {fileID: 1314297620}
   - component: {fileID: 1314297619}
-  - component: {fileID: 1314297618}
   - component: {fileID: 1314297622}
   - component: {fileID: 1314297623}
   m_Layer: 0
@@ -28364,29 +28345,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1314297616}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -436.07065, y: 51.446644, z: 192.2146}
+  m_LocalPosition: {x: -423.9, y: 51.446644, z: 192.2146}
   m_LocalScale: {x: 16.038515, y: 7.9825797, z: 11.033403}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1314297618
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1314297616}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7ebace9b35dbf3943b474bf68e7246a0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!23 &1314297619
 MeshRenderer:
   m_ObjectHideFlags: 0
