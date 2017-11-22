@@ -73,6 +73,6 @@ public class HUDHandler : MonoBehaviour
  
     public void TakeDamage ()
     {
-        _animator.SetTrigger("TakeDamage");
+    //    _animator.SetTrigger("TakeDamage");
     }
 }

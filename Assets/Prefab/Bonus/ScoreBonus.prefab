@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 33493119172699584}
   - component: {fileID: 65880475534260586}
   - component: {fileID: 23046540071836652}
-  - component: {fileID: 114611211982920024}
+  - component: {fileID: 95080523625371016}
+  - component: {fileID: 114979588800356744}
   m_Layer: 0
   m_Name: ScoreBonus
   m_TagString: Untagged
@@ -94,7 +95,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114611211982920024
+--- !u!95 &95080523625371016
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1203523448032716}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 619f91527c469c94780a4a5a4b967d27, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114979588800356744
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
