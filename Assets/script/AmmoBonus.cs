@@ -9,6 +9,6 @@ public int Amount = 1;
 public override void ApplyBonus (Pawn pawn)
     {
         pawn.Ammo += Amount;
-        Destroy(gameObject);
+        _animator.SetTrigger("Pickup");
     }
 }

@@ -236,7 +236,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 38356644
+  randomSeed: 1675480491
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3580,7 +3580,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 2091862443
+  randomSeed: -136045807
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6806,8 +6806,9 @@ GameObject:
   - component: {fileID: 62550771}
   - component: {fileID: 62550773}
   - component: {fileID: 62550772}
+  - component: {fileID: 62550774}
   m_Layer: 0
-  m_Name: Healtbar
+  m_Name: Healthbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6864,6 +6865,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 62550770}
+--- !u!95 &62550774
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62550770}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a8c89ec64a16dbf4498e55b3e6ae4a70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &68218897
 GameObject:
   m_ObjectHideFlags: 0
@@ -6944,6 +6962,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114944775794985670, guid: fcf9f6633f661a640b63eb3630017e5f,
+        type: 2}
+      propertyPath: UiHandler
+      value: 
+      objectReference: {fileID: 373956346}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcf9f6633f661a640b63eb3630017e5f, type: 2}
   m_IsPrefabParent: 0
@@ -7469,7 +7492,8 @@ MonoBehaviour:
   Player: {fileID: 1549516181}
   ScoreText: {fileID: 287401614}
   AmmoText: {fileID: 1951613665}
-  HealtBar: {fileID: 62550772}
+  HealthBar: {fileID: 62550772}
+  ScoreIncrementSpeed: 40
 --- !u!114 &373956347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7967,7 +7991,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 78493067
+  randomSeed: -1271499601
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -11340,7 +11364,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1282314665
+  randomSeed: -746754829
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -14800,7 +14824,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1882767347
+  randomSeed: 403979912
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -18144,7 +18168,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 731526558
+  randomSeed: -1564596169
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -21479,8 +21503,9 @@ GameObject:
   - component: {fileID: 1110795163}
   - component: {fileID: 1110795165}
   - component: {fileID: 1110795164}
+  - component: {fileID: 1110795166}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Health Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21537,6 +21562,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1110795162}
+--- !u!95 &1110795166
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1110795162}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a8c89ec64a16dbf4498e55b3e6ae4a70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1128217697
 Prefab:
   m_ObjectHideFlags: 0
@@ -21764,7 +21806,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1014401141
+  randomSeed: -1944810710
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -25108,7 +25150,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -125454922
+  randomSeed: 812756599
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -28754,7 +28796,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 424697234
+  randomSeed: 528523817
   InitialModule:
     serializedVersion: 3
     enabled: 1

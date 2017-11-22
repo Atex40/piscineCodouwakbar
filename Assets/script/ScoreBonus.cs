@@ -10,7 +10,7 @@ public class ScoreBonus : Bonus
     public override void ApplyBonus (Pawn pawn)
     {
         pawn.AddScore(Score);
-        Destroy(gameObject);
+        _animator.SetTrigger("Pickup");
     }
 
 }
