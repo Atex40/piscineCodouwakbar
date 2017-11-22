@@ -9,8 +9,10 @@ public class Pawn : MonoBehaviour, ITakeDamage {
     public Projectile ProjectilePrefab;
     public Transform SpawnTir;
 
+    public HUDHandler UiHandler;
 
-	public float MaxSpeed = 100f;
+
+    public float MaxSpeed = 100f;
     public float ForwardAcceleration = 25f;
 
 
@@ -27,7 +29,8 @@ public void Awake ()
 	{
         _rigidbody = GetComponent<Rigidbody>();
 		Assert.IsNotNull(_rigidbody);
-	}
+        Assert.IsNotNull(UiHandler);
+    }
 
 	void Start () 
 	{
@@ -95,6 +98,7 @@ public void Awake ()
     public void TakeDamage(float damage, GameObject instigator)
     {
         CurrentHealth -= damage;
+        UiHandler.TakeDamage();
         if (CurrentHealth <= 0)
             Kill();
     }
