@@ -15,6 +15,7 @@ public class HUDHandler : MonoBehaviour
     [Header("Interface")]
     public TextMeshProUGUI ScoreText;
     public TextMeshProUGUI AmmoText;
+    public TextMeshProUGUI ShieldText;
     public Image HealthBar;
 
     [Header("Settings")]
@@ -28,6 +29,7 @@ public class HUDHandler : MonoBehaviour
         Assert.IsNotNull(Player);
         Assert.IsNotNull(ScoreText);
         Assert.IsNotNull(AmmoText);
+        Assert.IsNotNull(ShieldText);
         Assert.IsNotNull(HealthBar);
         _currentScore = 0;
 
@@ -38,7 +40,8 @@ public class HUDHandler : MonoBehaviour
     {
 	    if(Player != null)
         {
-            AmmoText.text = "x " + Player.Ammo;
+            AmmoText.text = "" + Player.Ammo;
+            ShieldText.text = "" + Player.CurrentShield;
             HealthBar.fillAmount = Mathf.Max(0, Player.CurrentHealth / Player.MaxHealth);
             if (HealthBar.fillAmount >= 0.8f)
             {
