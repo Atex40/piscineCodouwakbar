@@ -24,6 +24,10 @@ public class Pawn : MonoBehaviour, ITakeDamage {
     public float MaxHealth = 100f;
     public float CurrentHealth;
 
+    
+    public int MaxShield = 3;
+    public int CurrentShield;
+
     public int Ammo = 3;
     public int Score { get; private set; }
 
@@ -102,10 +106,25 @@ public void Awake ()
     public void TakeDamage(float damage, GameObject instigator)
     {
         _audioDegats.Play();
-        CurrentHealth -= damage;
-        UiHandler.TakeDamage();
-        if (CurrentHealth <= 0)
-            Kill();
+        if(CurrentShield > 0)
+        {
+            CurrentShield--;
+        }
+        else
+        {
+            CurrentHealth -= damage;
+            UiHandler.TakeDamage();
+            if (CurrentHealth <= 0)
+                Kill();
+        }
+
+    }
+
+    public void AddShield(int shieldAmount)
+    {
+        CurrentShield += shieldAmount;
+        if (CurrentShield > MaxShield)
+            CurrentShield = MaxShield;
     }
 
     public void AddScore(int scoreValue)

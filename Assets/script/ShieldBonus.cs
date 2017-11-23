@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AmmoBonus : Bonus
+public class ShieldBonus : Bonus
 {
-    public int Amount = 1;
+    public int Shield = 1;
 
-    public override void ApplyBonus (Pawn pawn)
+    public override void ApplyBonus(Pawn pawn)
     {
-        pawn.Ammo += Amount;
+        pawn.AddShield(Shield);
         _animator.SetTrigger("Pickup");
     }
 }
