@@ -9,6 +9,8 @@ public class Pawn : MonoBehaviour, ITakeDamage {
     public Projectile ProjectilePrefab;
     public Transform SpawnTir;
 
+    protected AudioSource _audioDegats;
+
     public HUDHandler UiHandler;
 
 
@@ -27,9 +29,11 @@ public class Pawn : MonoBehaviour, ITakeDamage {
 
 public void Awake () 
 	{
+        _audioDegats = GetComponent<AudioSource>();
         _rigidbody = GetComponent<Rigidbody>();
 		Assert.IsNotNull(_rigidbody);
         Assert.IsNotNull(UiHandler);
+        Assert.IsNotNull(_audioDegats);
     }
 
 	void Start () 
@@ -97,6 +101,7 @@ public void Awake ()
 
     public void TakeDamage(float damage, GameObject instigator)
     {
+        _audioDegats.Play();
         CurrentHealth -= damage;
         UiHandler.TakeDamage();
         if (CurrentHealth <= 0)
