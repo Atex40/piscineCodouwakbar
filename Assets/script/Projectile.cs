@@ -19,7 +19,7 @@ public class Projectile : MonoBehaviour {
         _rigidbody.velocity = initialVelocity;
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider collision)
     {
         ITakeDamage damageable = collision.gameObject.GetComponentInParent<ITakeDamage>();
         if(damageable != null)
@@ -31,3 +31,4 @@ public class Projectile : MonoBehaviour {
     }
 
 }
+    

@@ -7421,7 +7421,7 @@ Prefab:
     - target: {fileID: 54361342007901686, guid: fcf9f6633f661a640b63eb3630017e5f,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 116
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcf9f6633f661a640b63eb3630017e5f, type: 2}
@@ -20749,7 +20749,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 860064929}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b923ce2968b96e44286f2f8089e45171, type: 2}
   m_CullingMode: 0
@@ -46953,7 +46953,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4796971117455700, guid: ad1b23f4514e47547a43b5696b1fc001, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -423.5
+      value: -404
       objectReference: {fileID: 0}
     - target: {fileID: 4796971117455700, guid: ad1b23f4514e47547a43b5696b1fc001, type: 2}
       propertyPath: m_LocalPosition.y
@@ -46961,7 +46961,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4796971117455700, guid: ad1b23f4514e47547a43b5696b1fc001, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 280.9
+      value: 1245
       objectReference: {fileID: 0}
     - target: {fileID: 4796971117455700, guid: ad1b23f4514e47547a43b5696b1fc001, type: 2}
       propertyPath: m_LocalRotation.x
@@ -47015,7 +47015,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2012310032}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 26b426095d095894a9b3f0d44dabb9a1, type: 2}
   m_CullingMode: 0
@@ -47092,7 +47092,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -47104,7 +47104,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -47116,7 +47116,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!114 &2012310037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47140,7 +47140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d875f3d57005e49438d12d3557c293c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 50
+  MaxHealth: 20
 --- !u!1001 &2016490071
 Prefab:
   m_ObjectHideFlags: 0
