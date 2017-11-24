@@ -21,11 +21,10 @@ GameObject:
   - component: {fileID: 4506391148236068}
   - component: {fileID: 33500304834477278}
   - component: {fileID: 23166069434579942}
-  - component: {fileID: 95339157709120064}
   - component: {fileID: 82172886725931968}
   - component: {fileID: 135721775839115252}
   - component: {fileID: 114307155742713694}
-  - component: {fileID: 114033791041593748}
+  - component: {fileID: 114393965336958230}
   m_Layer: 0
   m_Name: MinePrefab
   m_TagString: Untagged
@@ -40,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1300393763563974}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -397.9, y: 49.5, z: -10.5}
+  m_LocalPosition: {x: -443.2, y: 52, z: 3033.6}
   m_LocalScale: {x: 13.012858, y: 13.012853, z: 13.012853}
   m_Children: []
   m_Father: {fileID: 0}
@@ -165,35 +164,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!95 &95339157709120064
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1300393763563974}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: c6d034b7a35639845a4e743f6d895fbc, type: 3}
-  m_Controller: {fileID: 9100000, guid: 6765949e5b0c6ea41a37909bb3485cad, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114033791041593748
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1300393763563974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d875f3d57005e49438d12d3557c293c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxHealth: 100
 --- !u!114 &114307155742713694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -206,6 +176,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 100
+--- !u!114 &114393965336958230
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1300393763563974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d875f3d57005e49438d12d3557c293c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 100
 --- !u!135 &135721775839115252
 SphereCollider:
   m_ObjectHideFlags: 1

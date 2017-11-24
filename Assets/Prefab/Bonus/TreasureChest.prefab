@@ -56,8 +56,7 @@ GameObject:
   - component: {fileID: 82392488149184506}
   - component: {fileID: 23063766837145328}
   - component: {fileID: 65554218585041808}
-  - component: {fileID: 95234109910782912}
-  - component: {fileID: 114613564048577864}
+  - component: {fileID: 114922701754849770}
   m_Layer: 0
   m_Name: TreasureChest
   m_TagString: Untagged
@@ -98,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1862076667015186}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000029504295}
-  m_LocalPosition: {x: -386.1, y: 52, z: 215}
+  m_LocalPosition: {x: -392.4, y: 68.7, z: 5748.6}
   m_LocalScale: {x: 1694.3027, y: 1694.302, z: 1694.302}
   m_Children:
   - {fileID: 4571353755991092}
@@ -309,24 +308,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!95 &95234109910782912
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1862076667015186}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c5ec895752886b64d9e7c3a6e44191f2, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114613564048577864
+--- !u!114 &114922701754849770
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -338,3 +320,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Score: 50
+  tg: 0
