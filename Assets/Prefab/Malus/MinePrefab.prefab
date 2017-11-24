@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 82172886725931968}
   - component: {fileID: 135721775839115252}
   - component: {fileID: 114307155742713694}
+  - component: {fileID: 114033791041593748}
   m_Layer: 0
   m_Name: MinePrefab
   m_TagString: Untagged
@@ -181,6 +182,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114033791041593748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1300393763563974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d875f3d57005e49438d12d3557c293c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 100
 --- !u!114 &114307155742713694
 MonoBehaviour:
   m_ObjectHideFlags: 1
