@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro; 
 
-[RequireComponent(typeof(Animator))]
 public class HUDHandler : MonoBehaviour
 {
 
@@ -21,7 +20,6 @@ public class HUDHandler : MonoBehaviour
     [Header("Settings")]
     public float ScoreIncrementSpeed = 10f;
 
-    private Animator _animator;
     private int _currentScore;
     
     void Awake ()
@@ -33,7 +31,6 @@ public class HUDHandler : MonoBehaviour
         Assert.IsNotNull(HealthBar);
         _currentScore = 0;
 
-        _animator = GetComponent<Animator>();
     }
 		
 	void Update ()
@@ -73,9 +70,4 @@ public class HUDHandler : MonoBehaviour
 
         }	
 	}
- 
-    public void TakeDamage ()
-    {
-    //    _animator.SetTrigger("TakeDamage");
-    }
 }

@@ -9,6 +9,5 @@ public class ShieldBonus : Bonus
     public override void ApplyBonus(Pawn pawn)
     {
         pawn.AddShield(Shield);
-        _animator.SetTrigger("Pickup");
     }
 }

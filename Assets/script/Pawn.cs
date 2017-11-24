@@ -29,7 +29,6 @@ public class Pawn : MonoBehaviour, ITakeDamage {
     public int MaxShield = 3;
     public int CurrentShield;
 
-    public Animator _anim;
 
     public int Ammo = 3;
     public int Score { get; private set; }
@@ -116,7 +115,6 @@ public void Awake ()
         else
         {
             CurrentHealth -= damage;
-            UiHandler.TakeDamage();
             if (CurrentHealth <= 0)
             {
                 Kill();

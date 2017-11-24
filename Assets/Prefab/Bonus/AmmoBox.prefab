@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 82903544369616748}
   - component: {fileID: 23857123690741180}
   - component: {fileID: 65481401292395564}
-  - component: {fileID: 95302941703415974}
   - component: {fileID: 114817942780863786}
   m_Layer: 0
   m_Name: AmmoBox
@@ -309,23 +308,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!95 &95302941703415974
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1147821045634004}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1648ea7baf25475418e1a58d1d9d7a8d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!111 &111562940042914848
 Animation:
   m_ObjectHideFlags: 1

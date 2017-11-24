@@ -9,7 +9,6 @@ public class AmmoBonus : Bonus
     public override void ApplyBonus (Pawn pawn)
     {
         pawn.Ammo += Amount;
-        _animator.SetTrigger("Pickup");
         Destroy(gameObject);
     }
 }
