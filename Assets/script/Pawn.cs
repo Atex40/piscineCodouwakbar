@@ -28,6 +28,8 @@ public class Pawn : MonoBehaviour, ITakeDamage {
     public int MaxShield = 3;
     public int CurrentShield;
 
+    public Animator _anim;
+
     public int Ammo = 3;
     public int Score { get; private set; }
 
@@ -49,6 +51,7 @@ public void Awake ()
 
     private void Update ()
     {
+        StrafAnims();
         if (Input.GetButtonDown("Fire1") && Ammo > 0)
         {
             SpawnProjectile();
@@ -130,5 +133,18 @@ public void Awake ()
     public void AddScore(int scoreValue)
     {
         Score += scoreValue;
+    }
+
+    public void StrafAnims()
+    {
+        if(Input.GetKeyDown("q"))
+        {
+            _anim.SetTrigger("Left");
+        }
+
+        if (Input.GetKeyDown("d"))
+        {
+            _anim.SetTrigger("Right");
+        }
     }
 }
