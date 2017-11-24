@@ -10,5 +10,6 @@ public class AmmoBonus : Bonus
     {
         pawn.Ammo += Amount;
         _animator.SetTrigger("Pickup");
+        Destroy(gameObject);
     }
 }

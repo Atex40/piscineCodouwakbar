@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
+using UnityEngine.SceneManagement;
 
 public class Pawn : MonoBehaviour, ITakeDamage {
 
@@ -51,7 +52,6 @@ public void Awake ()
 
     private void Update ()
     {
-        StrafAnims();
         if (Input.GetButtonDown("Fire1") && Ammo > 0)
         {
             SpawnProjectile();
@@ -118,7 +118,10 @@ public void Awake ()
             CurrentHealth -= damage;
             UiHandler.TakeDamage();
             if (CurrentHealth <= 0)
+            {
                 Kill();
+               SceneManager.LoadScene("Scene kevin");
+            }
         }
 
     }
@@ -133,18 +136,5 @@ public void Awake ()
     public void AddScore(int scoreValue)
     {
         Score += scoreValue;
-    }
-
-    public void StrafAnims()
-    {
-        if(Input.GetKeyDown("q"))
-        {
-            _anim.SetTrigger("Left");
-        }
-
-        if (Input.GetKeyDown("d"))
-        {
-            _anim.SetTrigger("Right");
-        }
     }
 }

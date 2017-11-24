@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.Assertions;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
@@ -28,5 +29,5 @@ public class LevelManager : MonoBehaviour {
     {
         CameraController.Instance.currentcamera.transform.parent = null;
         Destroy(Player.gameObject);
-	}
+    }
 }
